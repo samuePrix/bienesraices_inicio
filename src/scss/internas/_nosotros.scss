@@ -1,0 +1,29 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+// ajuste global
+h2 {
+    font-weight: variables.$regular;
+}
+
+
+@include mixins.tablet {
+    .contenedor-nosotros {
+        @include mixins.grid(2, 2rem)
+    }
+
+}
+
+.contenedor-nosotros {
+    blockquote {
+        font-size: 2.4rem;
+        &::after {
+            content: '';
+            display: block;
+            width: 25rem;
+            height: .2rem;
+            background-color: variables.$verde;
+        }
+    }
+
+}

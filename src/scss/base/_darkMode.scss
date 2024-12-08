@@ -1,0 +1,49 @@
+@use "sass:color";
+@use "../base/variables";
+
+.dark-mode {
+  background-color: color.adjust(variables.$grisOscuro, $lightness: -10%);
+  p {
+    color: variables.$blanco;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  a {
+    color: variables.$gris;
+  }
+
+  .anuncio,
+  .resumen-propiedad {
+    background-color: color.adjust(variables.$grisOscuro, $lightness: -10%);
+    border: 1px solid variables.$grisOscuro;
+    .precio {
+      color: variables.$verde;
+    }
+    .iconos {
+      filter: invert(100%);
+    }
+    .iconos-caracteristicas p {
+      filter: invert(10%);
+    }
+  }
+
+  blockquote {
+    filter: invert(100%);
+  }
+  .formulario {
+    label,
+    legend,
+    p {
+      color: variables.$gris;
+    }
+    input:not([type="submit"]),
+    textarea,
+    select {
+      background-color: variables.$grisOscuro;
+      color: variables.$blanco;
+      border: 1px solid variables.$grisOscuro;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use "../base/variables" as v;
+@use "../base/globales";
+@use "../base/mixins";
+@use "../base/normalize";
+@use "../base/utilidades";
+.footer {
+    padding-top: calc(v.$separacion / 2);
+    background-color: v.$grisOscuro;
+    .contenedor-footer {
+        padding-top: calc(v.$separacion / 2);
+        display: block;    
+    }
+    .navegacion {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
+
+    .copyright {
+        color: v.$blanco;
+        text-align: center;
+        
+    }
+}
