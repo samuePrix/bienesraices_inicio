@@ -26,31 +26,34 @@ function darkMode(){
 
     // window.matchMedia('(prefers-color-scheme)'); prefers-color-scheme: dark or clear
 
-    if(preferDarkMode.matches){
-        document.body.classList.add('dark-mode');
-    }else{
-        document.body.classList.remove('dark-mode');
-    };
+            if(preferDarkMode.matches){
+                document.body.classList.add('dark-mode');
+            }else{
+                document.body.classList.remove('dark-mode');
+            }; 
 
-    preferDarkMode.addEventListener('change',function () {
-     if(preferDarkMode.matches) {
-        body.classList.add('dark-mode');
-     }else{
-        body.classList.remove('dark-mode');
-     }
+
+    
+            // leer preferencias del sistema
+        preferDarkMode.addEventListener('change',function(){
+        if(preferDarkMode.matches) {
+            body.classList.add('dark-mode');
+         }else{
+            body.classList.remove('dark-mode');
+         }    
     })
     
-
+            // Boton para activar el modo oscuro
     const btnDarkMode = document.querySelector('.dark-mode-boton')
     btnDarkMode.addEventListener('click', () => {
-
         if(body.classList.contains('dark-mode')){
             body.classList.remove('dark-mode');
         }else{
             document.body.classList.add('dark-mode');
         };
         // btnDarkMode.classList.toggle('dark-mode') MANERA SENCILLA DE HACER LO MISMO QUE EL IF-ELSE
-    })
+    } )
+
 }
 
 

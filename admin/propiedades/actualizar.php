@@ -1,10 +1,10 @@
 <?php
-require 'includes/funciones.php';
+require '../../includes/funciones.php';
 includesTemplate('header');
 ?>
 
 <main>
-  <h2>Titulo pagina</h2>
+  <h2>Actualizar</h2>
 </main>
 <!-- main -->
 <?php
