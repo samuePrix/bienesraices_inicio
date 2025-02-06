@@ -1,0 +1,13 @@
+@use '../base/variables';
+.alerta {
+    padding: .5rem;
+    display: inline;
+    color: variables.$blanco;
+    font-weight: variables.$bold;
+    margin: 1rem 0;
+    &.error{
+        border-radius: .5rem;
+        border: 1px solid variables.$rojo;
+        background-color: variables.$rojo;    
+    }
+}

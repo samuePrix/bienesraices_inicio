@@ -3,7 +3,7 @@ require '../includes/funciones.php';
 includesTemplate('header');
 ?>
 
-<main>
+<main class="contenedor seccion">
   <h2>Administrator of Real State</h2>
   
   <a href="/admin/propiedades/crear.php" class="boton boton-verde">New property</a>
